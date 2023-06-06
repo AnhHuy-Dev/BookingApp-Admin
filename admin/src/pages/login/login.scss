@@ -1,0 +1,90 @@
+.login {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.login h2 {
+	text-align: center;
+	margin-bottom: 12px;
+}
+
+.lContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.login-wrapper {
+	position: relative;
+}
+
+.lInput {
+	height: 40px;
+	padding: 10px;
+	width: 400px;
+	border: 1px solid #999;
+}
+
+.lButton {
+	border: none;
+	padding: 16px 20px;
+	background-color: #0071c2;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 18px;
+	width: 400px;
+}
+
+.lButton:disabled {
+	background-color: #0071c28c;
+	cursor: not-allowed;
+}
+
+.optiopns {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	background-color: #fff;
+	margin-top: 24px;
+}
+
+.optiopns::before {
+	--width: 90px;
+	position: absolute;
+	content: "";
+	width: var(--width);
+	height: 1px;
+	background-color: #cfcccc;
+	top: 50%;
+	left: 0;
+	box-shadow: calc(400px - var(--width)) 0 #cfcccc;
+}
+
+.policy {
+	font-size: 12px;
+	text-align: center;
+	max-width: 400px;
+	border-top: 1px solid #cfcccc;
+	margin-top: 18px;
+	padding: 12px 0;
+}
+
+.password,
+.re-password {
+	position: relative;
+}
+
+.icon-show-pass {
+	position: absolute;
+	right: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
